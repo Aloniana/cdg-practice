@@ -1,4 +1,4 @@
-require './generalMethods.rb'
+require '../generalMethods.rb'
 
 def greeting
   print "Введите свое имя: "
@@ -21,27 +21,27 @@ end
 
 def foobar
   print "Введите первое число = "
-  firstNum = gets
+  first_num = gets
   print "Введите второе число = "
-  secondNum = gets
-  if argumentError?(firstNum, secondNum)
+  second_num = gets
+  if int_argument_error?(first_num, second_num)
     puts "Неверное число"
     return 'error'
   end
-  firstNum = firstNum.to_i
-  secondNum = secondNum.to_i
-  if firstNum == 20 
+  first_num = first_num.to_i
+  second_num = second_num.to_i
+  if first_num == 20 
     print "Второе число = "
-    puts secondNum
-    secondNum
-  elsif secondNum == 20
+    puts second_num
+    second_num
+  elsif second_num == 20
     print "Первое число = "
-    puts firstNum
-    firstNum
+    puts first_num
+    first_num
   else 
     print "Первое число + второе число = "
-    puts firstNum + secondNum
-    firstNum + secondNum
+    puts first_num + second_num
+    first_num + second_num
   end
 end
 
