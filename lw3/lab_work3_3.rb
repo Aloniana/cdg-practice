@@ -51,7 +51,7 @@ def deposit
   else
     @balance += dep
   end
-
+  
   @balance
 end
 
