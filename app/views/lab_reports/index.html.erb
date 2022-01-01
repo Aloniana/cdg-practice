@@ -9,7 +9,12 @@
   .mark {
       margin-right: 32px;
   }
+  .logout {
+      text-align: right;
+  }
 </style>
+
+<%= render "devise/sessions/logout", user: @user %>
 <h2>Lab Reports</h2>
 
 <%= button_to 'Add report', new_lab_report_path, method: :get %>
