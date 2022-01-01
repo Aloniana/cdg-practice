@@ -51,6 +51,8 @@ def deposit
   else
     @balance += dep
   end
+  
+  @balance
 end
 
 def withdraw
@@ -67,6 +69,8 @@ def withdraw
   else
     @balance -= wd
   end
+
+  @balance
 end
 
 # work_with_balance
